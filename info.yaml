@@ -4,7 +4,7 @@ project:
   author:       "ZHU QUANHAO"      # Your name
   discord:      "zhuquanhao"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "input two number and do all kinds of calculation base on it"      # One line description of what your project does
-  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     100       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
@@ -15,9 +15,9 @@ project:
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
-    - "project.sv"
-    - "switch.sv"
-    - "Nixietube.sv"
+    - "project.v"
+    - "switch.v"
+    - "Nixietube.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
