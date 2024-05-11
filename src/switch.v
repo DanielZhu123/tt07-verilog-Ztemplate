@@ -2,17 +2,17 @@ module keyboard
 /*This part is to get an output answer for further display
 by turning on and off switches to do all kinds of calculation
 */
-(input logic reset,
-input logic modesel,
-input logic signsel_dispA,
-input logic positionsel_dispB,
-input logic numbersel_NOT,
-input logic bit4_ADD,
-input logic bit3_AND,
-input logic bit2_OR,
-input logic bit1_XOR,
-output logic[9:0] ans,
-output logic error);//more than one function activate(except NOT)
+  (input wire reset,
+input wire modesel,
+input wire signsel_dispA,
+input wire positionsel_dispB,
+input wire numbersel_NOT,
+input wire bit4_ADD,
+input wire bit3_AND,
+input wire bit2_OR,
+input wire bit1_XOR,
+output wire [9:0] ans,
+output wire error);//more than one function activate(except NOT)
 /*inputmode(0)    diaplaymode(1)
 A=x|xxxx|xxxx
 B=x|xxxx|xxxx
@@ -33,10 +33,10 @@ OR        ans=A|B
 XOR       ans=A^B
 */
 //reset A B into 0
-logic[8:0]     numA;
-logic[9:0]     numAmid;//numA extend 1 bit
-logic[8:0]     numB;
-logic[9:0]     numBmid;//numB extend 1 bit
+reg[8:0]     numA;
+reg[9:0]     numAmid;//numA extend 1 bit
+reg[8:0]     numB;
+reg[9:0]     numBmid;//numB extend 1 bit
 
 
 
