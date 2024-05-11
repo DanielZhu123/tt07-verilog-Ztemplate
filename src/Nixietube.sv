@@ -1,16 +1,16 @@
 module bit_10NT(
-input logic[9:0] data,//number to be displayed
-input logic clk,
-input logic error,
-output logic[13:0] display,//tube control signal 
-output logic power13,//power contol of 1 and 3 NT
-output logic power24);//power contol of 2 and 4 NT
+input wire [9:0] data,//number to be displayed
+input wire clk,
+input wire error,
+output wire [13:0] display,//tube control signal 
+output wire power13,//power contol of 1 and 3 NT
+output wire power24);//power contol of 2 and 4 NT
 
-logic[9:0] data_tep;
-logic[3:0] sign;//display +/-
-logic[3:0] num1;//display largest digit
-logic[3:0] num2;//display second largest digit
-logic[3:0] num3;//display least digit
+reg[9:0] data_tep;
+reg[3:0] sign;//display +/-
+reg[3:0] num1;//display largest digit
+reg[3:0] num2;//display second largest digit
+reg[3:0] num3;//display least digit
 
 always@(*)begin
   if(error==0)begin//alternately display
