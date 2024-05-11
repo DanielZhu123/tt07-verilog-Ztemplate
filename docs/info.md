@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Adding, and, or, xor numbers
 
 ## How to test
 
-Explain how to use your project
+By viewing the input and predict the output to see if it match with the display
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+4Nixie tube
